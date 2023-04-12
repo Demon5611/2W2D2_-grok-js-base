@@ -1,23 +1,18 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов многомерный массив (массив, содержащий другие массивы) чисел и число из одного из вложенных массивов, а возвращает индекс вложенного массива, в котором это число находится.
+Создайте функцию, которая принимает в качестве аргументов 2 неотрицательных числа, а возвращает сумму всех целых чисел в диапазоне между ними.
 
-Пример: ( [[1], [2, 3], [4]], 3 ) => 1
+Первое число может больше второго!
 
+Пример: (5, 3) => 12
 
-
-const nestedArr = (arr, number) => {
-  let result;
-  result = arr.findIndex((item) => item.includes(number));
-  return result === -1 ? undefined : result;
+*/
+let sumOfIntegers = () => {
+  let result = "";
+  for (i = 0; i < 10; i++) {
+    result.push(Math.floor(Math.random() * (10 + 1)));
+  }
+  return result;
 };
-
-
-// const nestedArr = (arr, number) => {
-//   let result = "";
-//   result = arr.findIndex((item) => item.some((elem) => elem === number));
-//   return result;
-// };
-
-// // console.log(nestedArr([[1], [2, 3], [4]], 4));
-// module.exports = nestedArr;
+console.log(sumOfIntegers());
+// module.exports = sumOfIntegers;
