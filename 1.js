@@ -1,13 +1,6 @@
-//Создайте функцию, которая принимает в качестве аргумента строку и выводит каждый символ этой строки в консоль.
+// Создайте функцию, которая принимает в качестве аргументов массив из слов, а возвращает созданное из этих слов предложение.
 
-const logEachLetter = (str) => {
-  let result = "";
+const toSentence = (arr) => arr.join(" ");
+console.log(toSentence(["I", "am", "groot"]));
 
-  for (let i = 0; i < str.length; i++) {
-    result = console.log(str[i]);
-  }
-  return result;
-};
-console.log(logEachLetter("hello"));
-
-// module.exports = logEachLetter
+module.exports = toSentence;
